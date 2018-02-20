@@ -1,0 +1,7 @@
+header, footer{
+    text-align: center
+}
+footer{
+    clear: left;
+    color: white;
+}
