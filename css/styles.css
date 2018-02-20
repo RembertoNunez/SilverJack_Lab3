@@ -1,5 +1,12 @@
+header, footer{
+    text-align: center
+}
+footer{
+    clear: left;
+    color: white;
+}
 body {
-    background-image: url("bg.jpg");
+    background-image: url("");
     background-color: #cccccc;
     font-family: "Gill Sans", sans-serif;
     font-size: 18px
