@@ -4,16 +4,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> SilverJack </title>
-         <style type="text/css">
+        <meta charset=utf-8 />
+        <meta name="description" content="description">
+        <title>SilverJack</title>
+        <style type="text/css">
             @import url("css/styles.css");
         </style>
+    </head>
         <body>
             <div id="gameState" >
             <?php
-                generateDeck();
+                play(); // function call
             ?>
+            <form>
+                <input type="submit" class="submit" value="Play Again!">
+            </form>
             </div>
         </body>
-    </head>
 </html>

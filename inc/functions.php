@@ -181,4 +181,37 @@
         echo '<br/>';
         displayWinners($allPlayers);
     }
+    
+    function play() 
+    {
+        $player1 = array(
+            'name' => 'Player 1',
+            'hand' => array(),
+            'points' => 0
+            );
+        $player2 = array(
+            'name' => 'Player 2',
+            'hand' => array(),
+            'points' => 0
+            );
+        $player3 = array(
+            'name' => 'Player 3',
+            'hand' => array(),
+            'points' => 0
+            );
+        $player4 = array(
+            'name' => 'Player 4',
+            'hand' => array(),
+            'points' => 0
+            );
+        
+        $allPlayers = array(
+            $player1,
+            $player2,
+            $player3,
+            $player4
+            );
+            getHand($allPlayers);
+            printGameState($allPlayers);
+    }
 ?>
