@@ -174,6 +174,7 @@
     {
         foreach ($allPlayers as $player)
         {
+            echo "<img src ='". $player['imgURL'] ."' /> <br/>" ;
             echo $player["name"].": ";
             displayHand($player);
             echo '<br/>';
@@ -186,21 +187,25 @@
     {
         $player1 = array(
             'name' => 'Player 1',
+            'imgURL' => './userPic/',
             'hand' => array(),
             'points' => 0
             );
         $player2 = array(
             'name' => 'Player 2',
+            'imgURL' => './userPic/',
             'hand' => array(),
             'points' => 0
             );
         $player3 = array(
             'name' => 'Player 3',
+            'imgURL' => './userPic/',
             'hand' => array(),
             'points' => 0
             );
         $player4 = array(
             'name' => 'Player 4',
+            'imgURL' => './userPic/',
             'hand' => array(),
             'points' => 0
             );
