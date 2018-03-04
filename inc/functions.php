@@ -102,11 +102,9 @@
     }
     function displayHand($player)
     {
-         echo "<section>";
         foreach ($player['hand'] as $card)
             printCard($card);
         echo $player['points'];
-        echo "<section/>";
     }
 
     function displayWinners($allPlayers)
@@ -117,7 +115,9 @@
         
         if ($i == $end)
         {
+            echo "<h2>";
             echo '<strong>No winner...</strong><br/>';
+            echo "<h2/>";
             return;
         }
 
@@ -149,8 +149,10 @@
                 $total += $player['points'];
 
         foreach($winners as $winner)
+            echo "<h2>";
             echo '<strong>'.$winner['name'].' wins '
             .$total.' points!</strong><br/>';
+            echo "<h2/>";
     }
 /*
     function printCard($card)
@@ -173,16 +175,18 @@
 
     function printGameState($allPlayers)
     {
+        echo "<div id='box'>";
         foreach ($allPlayers as $player)
         {
-            echo "<img id= 'userPic' src ='". $player['imgURL'] ."' align='top' />" ;
-            echo "<br/>";
-            echo $player["name"].": ";
+            echo "<img id= 'userPic' src ='". $player['imgURL'] ."' />" ;
             echo displayHand($player);
+            echo '<br/>';
+            echo $player["name"].": ";
             echo '<br/>';
         }
         echo '<br/>';
         displayWinners($allPlayers);
+        echo "<div/>";
     }
     
     function play() 

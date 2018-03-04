@@ -1,10 +1,12 @@
 header, footer{
     text-align: center
 }
+
 footer{
     clear: left;
     color: white;
 }
+
 body {
     background-image: url("");
     background-color: #cccccc;
@@ -13,26 +15,35 @@ body {
     align-content:center;
 }
 
+h1 {
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 45px;
+}
+
+h2 {
+    color:rgb(79,96,44);
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
 #userPic {
 width:60px;
 height:60px;
 padding-bottom: 0px;
 }
 
-#right {
+#hand {
     float: right;
 }
 
-#left {
+#points {
     float: left;
 }
 
-#card {
-    padding: 1px;
-}
-
 .submit {
-    background-color: #4CAF50;
+    background-color:rgb(15,127,18);
     border-radius: 8px;
     border: none;
     color: white;
@@ -43,5 +54,16 @@ padding-bottom: 0px;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    margin-left: 15%;
+    margin-right: 15%;
 }
+
+#box {
+    margin-left: 28%;
+    margin-right: 20%;
+}
+
+/*#body {*/
+/*    text-align: center;*/
+/*}*/
 
