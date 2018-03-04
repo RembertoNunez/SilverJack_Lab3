@@ -7,7 +7,7 @@
         <meta charset=utf-8 />
         <meta name="description" content="description">
         <title>SilverJack</title>
-        <style type="text/css">
+        <style>
             @import url("css/styles.css");
         </style>
     </head>

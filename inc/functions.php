@@ -102,9 +102,11 @@
     }
     function displayHand($player)
     {
+         echo "<section>";
         foreach ($player['hand'] as $card)
             printCard($card);
         echo $player['points'];
+        echo "<section/>";
     }
 
     function displayWinners($allPlayers)
@@ -164,19 +166,19 @@
     function printCard($card)
     {
         if ($card['hidden'] == 1)
-            echo "<img src='cards/card_back.png' />";
+            echo "<img id='card' src='cards/card_back.png' />";
         else
-            echo "<img src='cards/".$card['suit']
-                    ."/".($card['value'] == -1 ? 1 : $card['value']).".png' />";
+            echo "<img id='card' src='cards/".$card['suit'] ."/".($card['value'] == -1 ? 1 : $card['value']).".png' />";
     }
 
     function printGameState($allPlayers)
     {
         foreach ($allPlayers as $player)
         {
-            echo "<img src ='". $player['imgURL'] ."' /> <br/>" ;
+            echo "<img id= 'userPic' src ='". $player['imgURL'] ."' align='top' />" ;
+            echo "<br/>";
             echo $player["name"].": ";
-            displayHand($player);
+            echo displayHand($player);
             echo '<br/>';
         }
         echo '<br/>';
@@ -187,25 +189,25 @@
     {
         $player1 = array(
             'name' => 'Player 1',
-            'imgURL' => './userPic/',
+            'imgURL' => './userPic/legobatman.jpg',
             'hand' => array(),
             'points' => 0
             );
         $player2 = array(
             'name' => 'Player 2',
-            'imgURL' => './userPic/',
+            'imgURL' => './userPic/mario2.jpg',
             'hand' => array(),
             'points' => 0
             );
         $player3 = array(
             'name' => 'Player 3',
-            'imgURL' => './userPic/',
+            'imgURL' => './userPic/spiderman2.jpg',
             'hand' => array(),
             'points' => 0
             );
         $player4 = array(
             'name' => 'Player 4',
-            'imgURL' => './userPic/',
+            'imgURL' => './userPic/wonderwoman.jpg',
             'hand' => array(),
             'points' => 0
             );

@@ -9,5 +9,39 @@ body {
     background-image: url("");
     background-color: #cccccc;
     font-family: "Gill Sans", sans-serif;
-    font-size: 18px
+    font-size: 18px;
+    align-content:center;
 }
+
+#userPic {
+width:60px;
+height:60px;
+padding-bottom: 0px;
+}
+
+#right {
+    float: right;
+}
+
+#left {
+    float: left;
+}
+
+#card {
+    padding: 1px;
+}
+
+.submit {
+    background-color: #4CAF50;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
