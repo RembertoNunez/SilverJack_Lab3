@@ -16,10 +16,11 @@ body {
 }
 
 h1 {
-    background-color: black;
+    background: linear-gradient(silver, black);
     text-align: center;
     color: white;
     font-size: 45px;
+    padding: 20px;
 }
 
 h2 {
