@@ -12,7 +12,9 @@
         </style>
     </head>
         <body>
+             <h1>SilverJack</h1>
             <div id="gameState" >
+               
             <?php
                 play(); // function call
             ?>
