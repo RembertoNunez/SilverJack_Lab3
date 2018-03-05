@@ -104,6 +104,7 @@
     {
         foreach ($player['hand'] as $card)
             printCard($card);
+        echo "&nbsp";
         echo $player['points'];
     }
 
