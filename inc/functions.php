@@ -194,13 +194,13 @@
     function play() 
     {
         $player1 = array(
-            'name' => 'Miguel',
+            'name' => 'Leo',
             'imgURL' => './userPic/legobatman.jpg',
             'hand' => array(),
             'points' => 0
             );
         $player2 = array(
-            'name' => 'Leo',
+            'name' => 'Miguel',
             'imgURL' => './userPic/mario2.jpg',
             'hand' => array(),
             'points' => 0
