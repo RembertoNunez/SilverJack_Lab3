@@ -150,10 +150,8 @@
                 $total += $player['points'];
 
         foreach($winners as $winner)
-            echo "<h2>";
-            echo '<strong>'.$winner['name'].' wins '
-            .$total.' points!</strong><br/>';
-            echo "<h2/>";
+            echo '<h2><strong>'.$winner['name'].' wins '
+            .$total.' points!</strong><h2/><br/>';
     }
 /*
     function printCard($card)
