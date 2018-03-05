@@ -182,7 +182,8 @@
             echo "<img id= 'userPic' src ='". $player['imgURL'] ."' />" ;
             echo displayHand($player);
             echo '<br/>';
-            echo $player["name"].": ";
+            echo "<div id='playername'>";
+            echo $player["name"];
             echo '<br/>';
         }
         echo '<br/>';
@@ -193,25 +194,25 @@
     function play() 
     {
         $player1 = array(
-            'name' => 'Player 1',
+            'name' => 'Miguel',
             'imgURL' => './userPic/legobatman.jpg',
             'hand' => array(),
             'points' => 0
             );
         $player2 = array(
-            'name' => 'Player 2',
+            'name' => 'Leo',
             'imgURL' => './userPic/mario2.jpg',
             'hand' => array(),
             'points' => 0
             );
         $player3 = array(
-            'name' => 'Player 3',
+            'name' => 'Remberto',
             'imgURL' => './userPic/spiderman2.jpg',
             'hand' => array(),
             'points' => 0
             );
         $player4 = array(
-            'name' => 'Player 4',
+            'name' => 'Vanessa',
             'imgURL' => './userPic/wonderwoman.jpg',
             'hand' => array(),
             'points' => 0
@@ -223,6 +224,7 @@
             $player3,
             $player4
             );
+            shuffle($allPlayers);
             getHand($allPlayers);
             printGameState($allPlayers);
     }

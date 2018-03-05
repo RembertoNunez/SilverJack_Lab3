@@ -29,6 +29,7 @@ h2 {
     color:rgb(79,96,44);
     margin-right: 15%;
     margin-left: 15%;
+    float:center;
 }
 
 #card {
@@ -61,13 +62,18 @@ padding-bottom: 0px;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    margin-left: 15%;
+    margin-left: 33%;
     margin-right: 15%;
 }
 
 #box {
-    margin-left: 28%;
+    margin-left: 20%;
     margin-right: 20%;
+    border-radius: 25px;
+    border: 2px solid #8D9294;
+    padding: 20px; 
+    width: auto;
+    height: auto; 
 }
 
 /*#body {*/
