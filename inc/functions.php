@@ -182,48 +182,62 @@
             echo '<br/>';
             echo "<div id='playername'>";
             echo $player["name"];
-            echo '<br/>';
+            echo '<br/></div>';
         }
         echo '<br/>';
         displayWinners($allPlayers);
-        echo "<div/>";
+        echo "</div>";
     }
     
     function play() 
-    {
-        $player1 = array(
-            'name' => 'Leo',
-            'imgURL' => './userPic/legobatman.jpg',
-            'hand' => array(),
-            'points' => 0
-            );
-        $player2 = array(
-            'name' => 'Miguel',
-            'imgURL' => './userPic/mario2.jpg',
-            'hand' => array(),
-            'points' => 0
-            );
-        $player3 = array(
-            'name' => 'Remberto',
-            'imgURL' => './userPic/spiderman2.jpg',
-            'hand' => array(),
-            'points' => 0
-            );
-        $player4 = array(
-            'name' => 'Vanessa',
-            'imgURL' => './userPic/wonderwoman.jpg',
-            'hand' => array(),
-            'points' => 0
-            );
-        
-        $allPlayers = array(
-            $player1,
-            $player2,
-            $player3,
-            $player4
-            );
-            shuffle($allPlayers);
-            getHand($allPlayers);
-            printGameState($allPlayers);
+    {            
+        $time = 0;
+        for ($i = 0; $i < 10; $i++)
+        {
+            $player1 = array(
+                'name' => 'Leo',
+                'imgURL' => './userPic/legobatman.jpg',
+                'hand' => array(),
+                'points' => 0
+                );
+            $player2 = array(
+                'name' => 'Miguel',
+                'imgURL' => './userPic/mario2.jpg',
+                'hand' => array(),
+                'points' => 0
+                );
+            $player3 = array(
+                'name' => 'Remberto',
+                'imgURL' => './userPic/spiderman2.jpg',
+                'hand' => array(),
+                'points' => 0
+                );
+            $player4 = array(
+                'name' => 'Vanessa',
+                'imgURL' => './userPic/wonderwoman.jpg',
+                'hand' => array(),
+                'points' => 0
+                );
+            
+            $allPlayers = array(
+                $player1,
+                $player2,
+                $player3,
+                $player4
+                );
+                shuffle($allPlayers);
+
+                $time_start = microtime(true);
+                getHand($allPlayers);
+                printGameState($allPlayers);
+                $time_end = microtime(true);
+                $temp = $time_end - $time_start;
+                echo "This game ran in $temp";
+                $time += $temp;
+            }
+            echo "<br/>The average runtime on 10 games is " .($time / 10);
+            
+            //getHand($allPlayers);
+            //printGameState($allPlayers);
     }
 ?>

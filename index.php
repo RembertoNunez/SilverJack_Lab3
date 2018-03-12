@@ -16,7 +16,7 @@
             <div id="gameState" >
                
             <?php
-                play(); // function call
+                play();
             ?>
             <form>
                 <input type="submit" class="submit" value="Play Again!">
